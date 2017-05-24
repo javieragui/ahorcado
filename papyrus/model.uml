@@ -8,8 +8,21 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_p3vSsDmgEeempohtz-wsdQ" name="fallos" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gDvH0ECMEeeVkbnh2527UA" name="partida" type="_Ekzi8CqSEeeKU5mkacsVDg" association="_gDnMAECMEeeVkbnh2527UA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OzNJQECOEeeVkbnh2527UA" name="brazoIzquierdo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UcPOUECOEeeVkbnh2527UA" name="brazoDerecho" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ywn0oECOEeeVkbnh2527UA" name="piernaIzquierda" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dy7Q4ECOEeeVkbnh2527UA" name="piernaDerecha" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_EV5pADmgEeempohtz-wsdQ" name="dibujar" visibility="public"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_Kxbj4DsSEeePtPkgI_7HgQ" name="incrementarFallo" concurrency="concurrent">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Kxbj4DsSEeePtPkgI_7HgQ" name="incrementarFallo" visibility="public" concurrency="concurrent">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_QDkL4DsSEeePtPkgI_7HgQ">
           <ownedComment xmi:type="uml:Comment" xmi:id="_QDkL4TsSEeePtPkgI_7HgQ" annotatedElement="_QDkL4DsSEeePtPkgI_7HgQ">
             <body>Incrementa el contador de fallos.</body>
@@ -25,6 +38,18 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Ekzi8CqSEeeKU5mkacsVDg" name="Partida" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zBeHsECNEeeVkbnh2527UA" name="nombreJugador" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4hVCoECNEeeVkbnh2527UA" name="puntaje" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__tcEAECNEeeVkbnh2527UA" name="limiteFrases" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EtwjQECOEeeVkbnh2527UA" name="tiempoPorFrase" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_ymwBMDsUEeePtPkgI_7HgQ" name="mostrarProgreso"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_OcmGsDsVEeePtPkgI_7HgQ" name="pedirLetra"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_aUwAcDsVEeePtPkgI_7HgQ" name="resolver"/>
@@ -48,6 +73,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1K0kDsQEeePtPkgI_7HgQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1Oe8DsQEeePtPkgI_7HgQ" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hscyEkCMEeeVkbnh2527UA" name="partida" type="_Ekzi8CqSEeeKU5mkacsVDg" association="_hsa84ECMEeeVkbnh2527UA"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_yNVEoDmgEeempohtz-wsdQ" name="elegirPalabra"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_GuQREDsMEeePtPkgI_7HgQ" name="comprobarLetra">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_AaKnYDsNEeePtPkgI_7HgQ" name="Letra">
@@ -78,6 +104,18 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_vSTXkDmYEeempohtz-wsdQ" name="Ahorcado"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gDnMAECMEeeVkbnh2527UA" name="contiene" memberEnd="_gDvH0ECMEeeVkbnh2527UA _gDyLIECMEeeVkbnh2527UA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gDt5sECMEeeVkbnh2527UA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gDt5sUCMEeeVkbnh2527UA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gDyLIECMEeeVkbnh2527UA" name="horca" type="_Ti8ysCqREeeKU5mkacsVDg" association="_gDnMAECMEeeVkbnh2527UA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hsa84ECMEeeVkbnh2527UA" name="setAdivina" memberEnd="_hscyEkCMEeeVkbnh2527UA _hseAMECMEeeVkbnh2527UA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hscyEECMEeeVkbnh2527UA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hscyEUCMEeeVkbnh2527UA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_hseAMECMEeeVkbnh2527UA" name="palabra" type="_d5tOUCqVEeeKU5mkacsVDg" association="_hsa84ECMEeeVkbnh2527UA"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JwJ2wDmWEeempohtz-wsdQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JwM6EDmWEeempohtz-wsdQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
