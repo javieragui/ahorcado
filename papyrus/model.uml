@@ -8,7 +8,6 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_p3vSsDmgEeempohtz-wsdQ" name="fallos" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_gDvH0ECMEeeVkbnh2527UA" name="partida" type="_Ekzi8CqSEeeKU5mkacsVDg" association="_gDnMAECMEeeVkbnh2527UA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_OzNJQECOEeeVkbnh2527UA" name="brazoIzquierdo" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedAttribute>
@@ -50,6 +49,8 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_EtwjQECOEeeVkbnh2527UA" name="tiempoPorFrase" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gDyLIECMEeeVkbnh2527UA" name="horca" type="_Ti8ysCqREeeKU5mkacsVDg" association="_gDnMAECMEeeVkbnh2527UA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_hseAMECMEeeVkbnh2527UA" name="palabra" type="_d5tOUCqVEeeKU5mkacsVDg" association="_hsa84ECMEeeVkbnh2527UA"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_ymwBMDsUEeePtPkgI_7HgQ" name="mostrarProgreso"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_OcmGsDsVEeePtPkgI_7HgQ" name="pedirLetra"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_aUwAcDsVEeePtPkgI_7HgQ" name="resolver"/>
@@ -73,8 +74,11 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1K0kDsQEeePtPkgI_7HgQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1Oe8DsQEeePtPkgI_7HgQ" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_hscyEkCMEeeVkbnh2527UA" name="partida" type="_Ekzi8CqSEeeKU5mkacsVDg" association="_hsa84ECMEeeVkbnh2527UA"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_yNVEoDmgEeempohtz-wsdQ" name="elegirPalabra"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yNVEoDmgEeempohtz-wsdQ" name="elegirPalabra">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_QVVTIESbEeeM_OKCBUYj9A" name="palabra">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_GuQREDsMEeePtPkgI_7HgQ" name="comprobarLetra">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_AaKnYDsNEeePtPkgI_7HgQ" name="Letra">
           <ownedComment xmi:type="uml:Comment" xmi:id="_AaKnYTsNEeePtPkgI_7HgQ" annotatedElement="_AaKnYDsNEeePtPkgI_7HgQ">
@@ -108,13 +112,13 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gDt5sECMEeeVkbnh2527UA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gDt5sUCMEeeVkbnh2527UA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_gDyLIECMEeeVkbnh2527UA" name="horca" type="_Ti8ysCqREeeKU5mkacsVDg" association="_gDnMAECMEeeVkbnh2527UA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gDvH0ECMEeeVkbnh2527UA" name="partida" type="_Ekzi8CqSEeeKU5mkacsVDg" association="_gDnMAECMEeeVkbnh2527UA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hsa84ECMEeeVkbnh2527UA" name="setAdivina" memberEnd="_hscyEkCMEeeVkbnh2527UA _hseAMECMEeeVkbnh2527UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hscyEECMEeeVkbnh2527UA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hscyEUCMEeeVkbnh2527UA" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_hseAMECMEeeVkbnh2527UA" name="palabra" type="_d5tOUCqVEeeKU5mkacsVDg" association="_hsa84ECMEeeVkbnh2527UA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_hscyEkCMEeeVkbnh2527UA" name="partida" type="_Ekzi8CqSEeeKU5mkacsVDg" association="_hsa84ECMEeeVkbnh2527UA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JwJ2wDmWEeempohtz-wsdQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JwM6EDmWEeempohtz-wsdQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

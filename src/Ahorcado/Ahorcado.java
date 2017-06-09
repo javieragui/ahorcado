@@ -8,9 +8,5 @@ package Ahorcado;
 /**
  * 
  */
-class Frase {
-	/**
-	 * 
-	 */
-	private String[] Frase;
+public class Ahorcado {
 };
